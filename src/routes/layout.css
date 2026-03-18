@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+:root {
+	--primary: #c8f31d;
+	--primary-dark: #b8df21;
+	--ink: #071b2c;
+	--muted: #5f6d78;
+	--paper: #f5f2ec;
+	--line: rgba(7, 27, 44, 0.12);
+	--shadow: 0 18px 42px -28px rgba(7, 27, 44, 0.36);
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		min-height: 100vh;
+		font-family: 'Poppins', 'Segoe UI', sans-serif;
+		color: var(--muted);
+		background: #fff;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Oswald', 'Arial Narrow', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: -0.02em;
+		color: var(--ink);
+	}
+
+	::selection {
+		background: rgba(200, 243, 29, 0.35);
+		color: #000;
+	}
+}
+
+@layer utilities {
+	.logo-mark {
+		display: inline-flex;
+		align-items: center;
+	}
+
+	.nav-shell {
+		border-radius: 9999px;
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		background: rgba(0, 0, 0, 0.42);
+		backdrop-filter: blur(12px);
+	}
+
+	.nav-link {
+		color: rgba(255, 255, 255, 0.72);
+		transition: color 220ms ease;
+	}
+
+	.nav-link:hover {
+		color: #fff;
+	}
+
+	.section-kicker {
+		display: inline-block;
+		font-size: 0.86rem;
+		font-weight: 500;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: #63737f;
+	}
+
+	.section-title {
+		font-size: clamp(2rem, 4.2vw, 3.8rem);
+		line-height: 1.06;
+	}
+
+	.surface-card {
+		border: 1px solid var(--line);
+		border-radius: 22px;
+		background: #fff;
+		box-shadow: var(--shadow);
+	}
+
+	.dark-panel {
+		border: 1px solid rgba(255, 255, 255, 0.14);
+		border-radius: 22px;
+		background: #0b0f14;
+		color: rgba(255, 255, 255, 0.88);
+	}
+
+	.card-lift {
+		transition:
+			transform 220ms ease,
+			box-shadow 220ms ease;
+	}
+
+	.card-lift:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 22px 42px -24px rgba(7, 27, 44, 0.42);
+	}
+
+	.btn-primary {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 9999px;
+		padding-inline: 1.35rem;
+		background: var(--primary);
+		color: #000;
+		font-family: 'Oswald', sans-serif;
+		font-size: 0.9rem;
+		font-weight: 500;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		transition:
+			transform 220ms ease,
+			background-color 220ms ease;
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-1px);
+		background: var(--primary-dark);
+	}
+
+	.btn-outline-dark {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 9999px;
+		border: 1px solid rgba(7, 27, 44, 0.26);
+		padding-inline: 1.35rem;
+		background: #fff;
+		color: #1b2a36;
+		font-family: 'Oswald', sans-serif;
+		font-size: 0.9rem;
+		font-weight: 500;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		transition:
+			transform 220ms ease,
+			border-color 220ms ease;
+	}
+
+	.btn-outline-dark:hover {
+		transform: translateY(-1px);
+		border-color: rgba(7, 27, 44, 0.5);
+	}
+
+	.btn-outline-light {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 9999px;
+		border: 1px solid rgba(255, 255, 255, 0.26);
+		padding-inline: 1.35rem;
+		background: rgba(255, 255, 255, 0.08);
+		color: #fff;
+		font-family: 'Oswald', sans-serif;
+		font-size: 0.9rem;
+		font-weight: 500;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		backdrop-filter: blur(8px);
+		transition:
+			transform 220ms ease,
+			border-color 220ms ease;
+	}
+
+	.btn-outline-light:hover {
+		transform: translateY(-1px);
+		border-color: rgba(255, 255, 255, 0.46);
+	}
+
+	.hero-pill {
+		display: inline-flex;
+		align-items: center;
+		border-radius: 9999px;
+		border: 1px solid rgba(255, 255, 255, 0.23);
+		background: rgba(255, 255, 255, 0.08);
+		padding: 0.38rem 0.9rem;
+		font-size: 0.74rem;
+		font-weight: 600;
+		letter-spacing: 0.17em;
+		text-transform: uppercase;
+		color: rgba(255, 255, 255, 0.85);
+		backdrop-filter: blur(8px);
+	}
+
+	.hero-title {
+		font-family: 'Oswald', sans-serif;
+		font-size: clamp(2.7rem, 7.8vw, 6.8rem);
+		line-height: 0.95;
+		color: #fff;
+	}
+
+	.hero-subtitle {
+		max-width: 44rem;
+		font-size: 1rem;
+		line-height: 1.8;
+		color: rgba(255, 255, 255, 0.75);
+	}
+
+	.stat-dark {
+		border: 1px solid rgba(255, 255, 255, 0.16);
+		border-radius: 18px;
+		background: rgba(4, 10, 18, 0.46);
+		backdrop-filter: blur(9px);
+	}
+
+	.skill-pill {
+		border-radius: 9999px;
+		border: 1px solid rgba(255, 255, 255, 0.14);
+		background: rgba(255, 255, 255, 0.09);
+		padding: 0.32rem 0.72rem;
+		font-size: 0.72rem;
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.88);
+	}
+
+	.muted {
+		color: #667580;
+	}
+}
