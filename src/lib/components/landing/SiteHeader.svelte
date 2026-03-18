@@ -11,8 +11,7 @@
 
 <header class="fixed top-0 left-0 z-50 w-full px-5 pt-4 md:px-8 md:pt-6">
 	<nav class="nav-shell mx-auto flex max-w-7xl items-center justify-between px-3 py-2.5 md:px-4">
-		<a href={topHref} class="logo-mark h-10 w-29"> 
-		</a>
+	 
 
 		<ul class="hidden items-center gap-6 lg:flex">
 			<li><a class="nav-link text-sm font-medium" href={aboutHref}>Giới thiệu</a></li>

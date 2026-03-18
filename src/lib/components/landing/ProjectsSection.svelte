@@ -57,11 +57,10 @@
 						<div class="mt-auto flex items-end justify-between gap-4 pt-6">
 							<div class="flex flex-wrap gap-2"></div>
 							<a
-								href="{project.link}"
+								href={project.link}
 								target="_blank"
 								title={`Mở dự án ${project.name}`}
 								class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#c8f11a] text-2xl text-[#102838] transition hover:scale-105"
-								on:click={() => openExternal(project.liveDemo || project.github)}
 							>
 								→
 							</a>
