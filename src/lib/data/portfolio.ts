@@ -29,7 +29,7 @@ export type Project = {
 };
 
 export const profile: Profile = {
-	name: 'Vũ Hồng Linh',
+	name: 'Vũ Hồng Lĩnh',
 	title: 'Lập trình viên Full-Stack',
 	tagline:
 		'Tôi xây dựng các sản phẩm web end-to-end, từ kiến trúc backend đến frontend hoàn thiện, đảm bảo hiệu năng tốt và code dễ bảo trì.',
