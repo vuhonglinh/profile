@@ -7,7 +7,7 @@
 	const projectsHref = resolve('/#projects');
 	const contactHref = resolve('/#contact');
 	const rootHref = resolve('/');
-	const cvFileHref = rootHref.endsWith('/') ? `${rootHref}cv.pdf` : `${rootHref}/cv.pdf`;
+	const cvFileHref = rootHref.endsWith('/') ? `${rootHref}vuhonglinh-cv.pdf` : `${rootHref}/vuhonglinh-cv.pdf`;
 
 	const openCv = () => {
 		if (typeof window !== 'undefined') {
@@ -45,7 +45,7 @@
 			<div class="flex flex-wrap gap-3">
 				<a href={projectsHref} class="btn-primary py-3 text-sm">Xem dự án</a>
 				<a href={contactHref} class="btn-outline-light py-3 text-sm">Liên hệ</a>
-				<button type="button" class="btn-outline-light py-3 text-sm" onclick={openCv}>
+				<button type="button" class="btn-outline-light py-3 text-sm cursor-pointer" onclick={openCv}>
 					Download CV
 				</button>
 			</div>
@@ -85,7 +85,7 @@
 					</a>
 
 					<a
-						href="mailto:davidvu.dev35@gmail.com"
+						href="mailto:vuhonglinh.dev@gmail.com"
 						target="_blank"
 						class="overflow-hidden rounded-2xl border bg-white"
 					>

@@ -34,7 +34,7 @@ export const profile: Profile = {
 	tagline:
 		'Tôi xây dựng các sản phẩm web end-to-end, từ kiến trúc backend đến frontend hoàn thiện, đảm bảo hiệu năng tốt và code dễ bảo trì.',
 	location: 'Thành phố Hà Nội, Việt Nam',
-	email: 'davidvu.dev35@gmail.com',
+	email: 'vuhonglinh.dev@gmail.com',
 	phone: '+84 393 915 663'
 };
 
