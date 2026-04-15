@@ -282,8 +282,8 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
 	{
-		period: '2025 - Hiện tại',
-		role: 'Lập trình viên Full-Stack',
+		period: '2025 - 03/2026',
+		role: 'Full-stack Developer',
 		company: 'Protean Studios',
 		points: [
 			'Phát triển và duy trì các hệ thống web full-stack, bao gồm dashboard và nền tảng học tập.',
@@ -292,8 +292,8 @@ export const experiences: Experience[] = [
 		]
 	},
 	{
-		period: '05/2024 - 12/2024',
-		role: 'Magento Developer',
+		period: '02/2024 - 12/2024',
+		role: 'Php Developer',
 		company: 'Magenest Company',
 		points: [
 			'Phát triển và tùy chỉnh các module Magento cho hệ thống thương mại điện tử.',
@@ -302,7 +302,7 @@ export const experiences: Experience[] = [
 		]
 	},
 	{
-		period: '01/2024 - 04/2024',
+		period: '11/2023 - 01/2024',
 		role: 'Intern MERN Stack Developer',
 		company: 'Internship',
 		points: [
@@ -314,7 +314,7 @@ export const experiences: Experience[] = [
 	{
 		period: '2022 - 2025',
 		role: 'Sinh viên Công nghệ Thông tin',
-		company: 'Cao đẳng FPT',
+		company: 'Cao đẳng FPT Hà Nội',
 		points: [
 			'Học tập và thực hành các kiến thức nền tảng về lập trình và phát triển phần mềm.',
 			'Thực hiện các dự án cá nhân và nhóm liên quan đến web development.',
